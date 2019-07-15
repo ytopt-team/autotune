@@ -5,6 +5,7 @@ from typing import Callable, List
 Constraint = Callable[[dict], bool]
 Constraints = List[Constraint]
 Objective = Callable[[dict], bool]
+Model = Callable[[dict], bool]
 
 class TuningProblem:
     """
@@ -22,9 +23,10 @@ class TuningProblem:
     >>> problem = TuningProblem(task_space, input_space, myobj)
     """
 
-    def __init__(self, task_space: Space, input_space: Space, objective: Objective, constraints: Constraints=[], name=None,  **kwargs):
+    def __init__(self, task_space: Space, input_space: Space, objective: Objective, constraints: Constraints=[], model: Model=None, name=None,  **kwargs):
         self.name = name
         self.task_space = task_space
         self.input_space = input_space
         self.objective = objective
         self.constraints = constraints[:]
+        self.model = model
