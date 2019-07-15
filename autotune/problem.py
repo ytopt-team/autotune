@@ -17,7 +17,9 @@ class TuningProblem:
     ...     Integer(10, 100, name="m"),
     ...     Integer(10, 100, name="n")
     ... ])
-    >>> problem = TuningProblem(task_space, input_space)
+    >>> def myobj(point):
+    ...     return point['m']
+    >>> problem = TuningProblem(task_space, input_space, myobj)
     """
 
     def __init__(self, task_space: Space, input_space: Space, objective: Objective, constraints: Constraints=[], name=None,  **kwargs):

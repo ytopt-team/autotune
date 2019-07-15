@@ -8,7 +8,7 @@ class Space:
     Args:
         space (list, optional): a list of Dimensions.
 
-    >>> from autotune import Space, Integer
+    >>> from autotune.space import Space, Integer
     >>> task_space = Space([Integer(1, 5, name='max_depth')])
     >>> task_space.to_dict([1])
     {'max_depth': 1}
