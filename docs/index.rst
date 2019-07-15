@@ -1,8 +1,9 @@
+********
 Autotune
 ********
 
 
-.. autoclass:: autotune.Space
+.. autoclass:: autotune.space.Space
     :members:
 
 .. autoclass:: autotune.TuningProblem

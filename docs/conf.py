@@ -103,10 +103,10 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_logo = ""
+# html_logo = ""
 
 html_theme_options = {
-    'logo_only': False,
+    # 'logo_only': False,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
