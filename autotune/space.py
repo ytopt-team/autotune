@@ -1,3 +1,4 @@
+from numpy import inf
 from skopt.space import *
 from skopt.utils import use_named_args
 from typing import List
