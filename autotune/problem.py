@@ -28,8 +28,11 @@ class TuningProblem:
     ... ])
     >>> def myobj(point):
     ...     return point['m']
+    >>> def model(point):
+    ...     from numpy import log
+    ...     return log(point['m']) + log(point['n'] + point['m']*point['n'])
     >>> cst = "m > n & m-n > 10"
-    >>> problem = TuningProblem(task_space, input_space, myobj, cst)
+    >>> problem = TuningProblem(task_space, input_space, myobj, cst, model)
     """
 
     def __init__(self,
