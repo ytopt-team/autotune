@@ -39,7 +39,7 @@ pip install -e '.[docs]'
 ...     from numpy import log
 ...     return log(point['m']) + log(point['n'] + point['m']*point['n'])
 >>> cst = "m > n & m-n > 10"
->>> problem = TuningProblem(task_space, input_space, myobj, cst, model)
+>>> problem = TuningProblem(task_space, input_space, output_space, myobj, cst, model)
 ```
 
 ## Documentation
