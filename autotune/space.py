@@ -16,12 +16,12 @@ class Space:
 
     """
 
-    def __init__(self, space: List[Dimension] , **kwargs):
-        self.space = space[:]
+    def __init__(self, dimensions: List[Dimension] , **kwargs):
+        self.dimensions = dimensions[:]
 
     def to_dict(self, params_list: list) -> dict:
 
-        @use_named_args(self.space)
+        @use_named_args(self.dimensions)
         def to_params_dict(**params):
             return params
 
