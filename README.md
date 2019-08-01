@@ -1,4 +1,4 @@
-# Autotune
+# Autotuning problem definition interface
 
 ## Installation
 
