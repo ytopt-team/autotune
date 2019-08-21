@@ -1,4 +1,4 @@
-# Autotuning problem definition interface
+# Common interface for autotuning search space and method definition
 
 ## Installation
 
@@ -62,8 +62,9 @@ search_param_dict['kappa'] = 1.96
 search_param_dict['patience_fac'] = 10 
 search_param_dict'n_initial_points'] = 10
 
-search = Search(search_param_dict)
+search = Search(problem, search_param_dict)
 
+search.run()
 
 ```
 
