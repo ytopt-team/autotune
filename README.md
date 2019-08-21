@@ -22,8 +22,12 @@ pip install -e '.[docs]'
 
 
 ```
+
+import collections
 from autotune import TuningProblem
 from autotune.space import *
+
+from autotune import Search
 
 task_space = Space([Categorical(["boyd1.mtx"], name="matrix")])
 
@@ -33,18 +37,35 @@ input_space = Space([Integer(10, 100, name="m"),
 
 output_space = Space([Real(0.0, inf, name="time")])
 
-def myobj(point):
+def objective(point):
     return point['m'] * point['n']
 
-def model(point):
+def analytical_model(point):
     from numpy import log
     return log(point['m']) + log(point['n'] + point['m']*point['n'])
 
-cst = "m > n & m-n > 10"
+analytical_models = collections.defaultdict(dict)
+constraints["boyd1.mtx"]["model1"] = analytical_model
 
-problem = TuningProblem(task_space, input_space, output_space, myobj, cst, model)
+constraints = collections.defaultdict(dict)
+constraints["boyd1.mtx"]["cst1"] = ["m > n & m-n > 10"]
+
+starting_points = collections.defaultdict(dict)
+starting_points["boyd1.mtx"]["pnt1"] = [15,20]
+
+problem = TuningProblem(task_space, input_space, output_space, objective, constrains, analytical_models)
+
+search_param_dict['method'] = 'surf'
+search_param_dict['acq_func'] = 'gp_hedge'
+search_param_dict['base_estimator'] = 'RF'
+search_param_dict['kappa'] = 1.96
+search_param_dict['patience_fac'] = 10 
+search_param_dict'n_initial_points'] = 10
+
+search = Search(search_param_dict)
+
+
 ```
-
 
 ## Documentation
 
