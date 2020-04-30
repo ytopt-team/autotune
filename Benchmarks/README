@@ -2,7 +2,7 @@
 #MCS, ANL
 #April 16, 2020
 
-The package tile-interchange includes the following directories:
+The package Benchmarks based on PolyBench 4.2 includes the following directories:
 gemm    (gemm benchmark)
 syr2k     (syr2k benchmark)
 plopper  (code generation and compiling for both gemm and syr2k)
