@@ -5,8 +5,11 @@
 #April 16, 2020
 
 The package Benchmarks based on PolyBench 4.2 includes the following directories:
+
 gemm    (gemm benchmark)
+
 syr2k     (syr2k benchmark)
+
 plopper  (code generation and compiling for both gemm and syr2k)
 
 Before autotuning a benchmark, please check your clang compiler using gemm.bat and syr2k.bat under the corresponding directories to see if these benchmarks can be compiled sucessfully.
