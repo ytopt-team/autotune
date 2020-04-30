@@ -1,1 +1,1 @@
-Autotuning an openmp example
+Autotuning openmp example by Mary Hall from University of Utah
