@@ -27,7 +27,7 @@ Installation requirements
 
 This autotuning framework requires the following components: SOLLVE Clang with polly and pragma-clang-loop, configspace, scikit-optimize, autotune and ytopt. See the following installation instructions for the details.
 
-1 Installing the latest version of SOLLVE
+1. Installing the latest version of SOLLVE
 
 Use SOLLVE official site: https://github.com/SOLLVE/llvm-project.git to install Clang with polly, and use git checkout origin/pragma-clang-loop to install the pragma-clang-loop.
 
@@ -35,8 +35,9 @@ Use SOLLVE official site: https://github.com/SOLLVE/llvm-project.git to install 
 
 For the autotune and ytopt using ConfigSpace, the installation is as follows:
 
-1)      Create a conda env ytune
-        conda create -n ytune python=3.7
+1)      Create a conda env ytopt
+        conda create -n ytopt python=3.7
+        conda activate ytopt
 
 2)      pip install ConfigSpace
 
