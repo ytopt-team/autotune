@@ -55,7 +55,8 @@ For the autotune and ytopt using ConfigSpace, the installation is as follows:
         pip install -e .
 
 Under the current directory, test the benchmark example:
+
 python -m ytopt.search.ambs --evaluator ray --problem ytopt.benchmark.loopopt.problem.Problem
 
-If this works, this environment for the autotuning framework is ready to use.
+If this works, this environment for the autotuning framework is ready to use. Please install scikit-learn==0.23.1 because its latest version may cause some problem.
 Please read the pdf file polybench-autotune.pdf for the details.
