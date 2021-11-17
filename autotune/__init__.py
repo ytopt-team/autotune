@@ -1,4 +1,4 @@
-from autotune.__version__ import __version__, __version_suffix__
+from autotune.__version__ import __version__
 name = 'autotune'
 version = __version__
 
