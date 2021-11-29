@@ -1,1 +1,1 @@
-This is the new version of XSBench with LLVM Clang/Polly loop optimization pragma.
+This is the new version of XSBench with LLVM Clang/Polly loop optimization pragma. Please follow the instructions from XSBench/readme.md (https://github.com/ytopt-team/autotune/tree/master/Benchmarks/XSBench/readme.md)
