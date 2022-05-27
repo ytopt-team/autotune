@@ -1,0 +1,40 @@
+p0,p1,p2,p3,p4,p5,p6,objective,elapsed_sec
+8,threads, , ,#pragma unroll(6),spread,static,2667.233,94.90219306945801
+48,threads, ,#pragma omp parallel for, ,master,dynamic,3231.625,192.3702211380005
+4,cores,#pragma unroll(3),#pragma omp parallel for, ,spread,dynamic,3372.364,280.37005734443665
+128,sockets,#pragma unroll(3),#pragma omp parallel for, ,close,static,4056.632,380.4305737018585
+256,cores, , ,#pragma unroll(6),spread,static,7608.445,489.4658434391022
+48,sockets,#pragma unroll(3),#pragma omp parallel for, ,spread,static,3100.543,582.9718174934387
+192,cores, , , ,master,static,4898.574,679.0959486961365
+96,sockets, ,#pragma omp parallel for,#pragma unroll(6),spread,dynamic,3590.802,771.1256322860718
+48,sockets, , ,#pragma unroll(6),spread,static,2754.824,860.1259348392487
+48,threads, , ,#pragma unroll(6),spread,dynamic,2701.104,945.3739264011383
+48,threads,#pragma unroll(3), ,#pragma unroll(6),spread,dynamic,2700.778,1027.8283512592316
+48,cores, , ,#pragma unroll(6),spread,static,2699.087,1111.8929042816162
+48,threads, , ,#pragma unroll(6),spread,static,2687.98,1194.1988909244537
+48,threads,#pragma unroll(3), ,#pragma unroll(6),spread,static,2718.204,1286.0607194900513
+48,threads, , ,#pragma unroll(6),close,static,2705.663,1374.40833902359
+48,sockets,#pragma unroll(3), ,#pragma unroll(6),spread,static,2695.029,1453.9556510448456
+48,sockets, , ,#pragma unroll(6),close,static,3043.229,1542.296181678772
+48,sockets,#pragma unroll(3), ,#pragma unroll(6),spread,dynamic,2870.164,1630.5349814891815
+48,threads,#pragma unroll(3), , ,spread,static,2696.244,1711.054054260254
+48,cores,#pragma unroll(3), ,#pragma unroll(6),spread,static,2699.253,1791.8752987384796
+48,cores,#pragma unroll(3), ,#pragma unroll(6),spread,dynamic,2702.817,1871.9994926452637
+48,cores, , ,#pragma unroll(6),spread,dynamic,2854.757,1961.9354701042175
+48,cores,#pragma unroll(3), ,#pragma unroll(6),master,static,3143.907,2046.6504573822021
+48,cores, ,#pragma omp parallel for,#pragma unroll(6),spread,static,2726.735,2145.224247455597
+48,cores, , , ,spread,static,2697.739,2225.2239861488342
+48,cores, , , ,spread,dynamic,2739.473,2314.2520525455475
+48,cores,#pragma unroll(3), , ,spread,static,2689.546,2396.426087141037
+48,threads, , , ,spread,static,3041.592,2480.424583673477
+48,cores,#pragma unroll(3), , ,spread,dynamic,2707.709,2569.7362384796143
+48,cores, ,#pragma omp parallel for,#pragma unroll(6),spread,dynamic,2702.797,2652.1088840961456
+48,cores, ,#pragma omp parallel for, ,spread,static,2685.752,2732.1499638557434
+48,threads, ,#pragma omp parallel for,#pragma unroll(6),spread,static,2704.102,2812.806253671646
+48,cores,#pragma unroll(3),#pragma omp parallel for,#pragma unroll(6),spread,static,3186.302,2900.224552154541
+48,cores,#pragma unroll(3),#pragma omp parallel for, ,spread,static,2693.418,2986.6515159606934
+48,cores, ,#pragma omp parallel for, ,spread,dynamic,2687.401,3070.5706284046173
+48,cores,#pragma unroll(3),#pragma omp parallel for, ,spread,dynamic,2705.47,3147.0597870349884
+48,threads, ,#pragma omp parallel for, ,spread,dynamic,2742.388,3223.1548047065735
+48,cores, , ,#pragma unroll(6),close,dynamic,2696.552,3310.958144426346
+48,cores, , ,#pragma unroll(6),close,static,3062.397,3397.299120903015

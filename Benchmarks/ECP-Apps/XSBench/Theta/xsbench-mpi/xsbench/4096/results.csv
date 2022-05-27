@@ -1,0 +1,49 @@
+p0,p1,p2,p3,p4,p5,objective,elapsed_sec
+32,160, ,cores,close,static,10.031,69.11697793006897
+192,100,#pragma omp parallel for,sockets,spread,dynamic,7.991,117.15023493766785
+64,256,#pragma omp parallel for,sockets,master,dynamic,5.405,169.00975394248962
+256,80,#pragma omp parallel for,sockets,master,static,9.631,229.09253215789795
+96,50, ,cores,master,dynamic,252.541,548.0734078884125
+96,20, ,sockets,spread,dynamic,9.205,608.0749003887177
+64,40, ,sockets,master,static,6.291,666.1203489303589
+8,128,#pragma omp parallel for,sockets,spread,static,44.645,780.1200957298279
+192,40,#pragma omp parallel for,threads,close,static,8.007,828.119788646698
+192,64, ,threads,master,dynamic,361.339,1288.5724980831146
+16,160,#pragma omp parallel for,sockets,close,static,26.017,1368.458342552185
+192,128,#pragma omp parallel for,sockets,close,static,8.004,1422.7147552967072
+192,64,#pragma omp parallel for,sockets,close,static,8.027,1480.5207033157349
+192,50,#pragma omp parallel for,sockets,close,static,8.04,1530.7381274700165
+192,200,#pragma omp parallel for,sockets,close,static,8.054,1582.8397653102875
+192,200,#pragma omp parallel for,sockets,spread,static,7.987,1809.8228132724762
+192,20,#pragma omp parallel for,sockets,spread,static,8.021,1858.7778854370117
+192,256,#pragma omp parallel for,sockets,spread,static,8.011,1916.7767605781555
+192,40,#pragma omp parallel for,sockets,spread,static,8.03,1973.1488869190216
+192,10,#pragma omp parallel for,sockets,spread,static,8.037,2029.0387842655182
+192,20,#pragma omp parallel for,sockets,master,static,8.048,2083.039009332657
+192,128,#pragma omp parallel for,sockets,spread,static,8.047,2137.06187582016
+192,160,#pragma omp parallel for,sockets,spread,static,8.025,2191.06201338768
+192,50,#pragma omp parallel for,sockets,spread,static,7.993,2245.474499940872
+192,100,#pragma omp parallel for,sockets,spread,static,7.974,2303.6524770259857
+192,40,#pragma omp parallel for,sockets,master,static,8.029,2357.652498960495
+192,256,#pragma omp parallel for,sockets,master,static,8.089,2419.6528599262238
+192,80,#pragma omp parallel for,sockets,master,static,8.009,2473.652286529541
+192,200,#pragma omp parallel for,sockets,master,static,8.024,2531.6521463394165
+192,64,#pragma omp parallel for,sockets,master,static,8.009,2585.7358627319336
+192,64,#pragma omp parallel for,sockets,spread,static,8.017,2639.65230345726
+192,400,#pragma omp parallel for,sockets,master,static,7.985,2693.652703523636
+192,50,#pragma omp parallel for,sockets,master,static,8.03,2747.241818189621
+192,10,#pragma omp parallel for,sockets,master,static,8.029,2801.271912574768
+192,100,#pragma omp parallel for,sockets,master,static,8.047,2859.1891810894012
+192,160,#pragma omp parallel for,sockets,master,static,8.023,2913.189236164093
+192,128,#pragma omp parallel for,sockets,master,static,8.047,2969.1895203590393
+192,256,#pragma omp parallel for,sockets,spread,dynamic,7.992,3022.2762503623962
+192,256,#pragma omp parallel for,sockets,master,dynamic,7.995,3082.784480571747
+192,200,#pragma omp parallel for,sockets,master,dynamic,8.041,3140.659113883972
+192,256,#pragma omp parallel for,sockets,close,dynamic,8.045,3194.659873485565
+192,40,#pragma omp parallel for,sockets,master,dynamic,8.037,3256.659190416336
+192,100,#pragma omp parallel for,sockets,master,dynamic,7.992,3304.6581053733826
+192,10,#pragma omp parallel for,sockets,master,dynamic,8.022,3358.7196440696716
+192,400,#pragma omp parallel for,sockets,master,dynamic,8.019,3416.720652103424
+192,80,#pragma omp parallel for,sockets,master,dynamic,7.988,3470.718397140503
+192,20,#pragma omp parallel for,sockets,master,dynamic,8.009,3524.762287378311
+192,40,#pragma omp parallel for,sockets,spread,dynamic,8.035,3580.1538548469543
