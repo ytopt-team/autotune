@@ -65,14 +65,7 @@ pip install -e .
 cd ..
 ```
 
-After this, the conda environment yt is installed successfully. For a simple test, 
-* do the following:
-```
-cd yt/ytopt/ytopt/benchmark/benchmark/xsbench-omp/xsbench
-run the following command:
-python -m ytopt.search.ambs --evaluator ray --problem problem.Problem --max-evals=5 --learner RF
-```
-If it runs successfully, the conda environment yt is installed successfully.
+After this, the conda environment yt is installed successfully. 
 
 # Instructions for testing the autotuning framework on a laptop 
 Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already. 
