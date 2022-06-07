@@ -1,1 +1,1 @@
-This directory includes autotuning XSBench on a laptop (MacBook Pro). 
+This directory includes autotuning XSBench on a laptop (MacBook Pro). This example demonstrates how to autotune at a small scale. After the ytopt is installed on the laptop, download the file xsbench-mpi.zip which includes the folders xsbench (for autotuning scripts), plopper (for compiling and execution), and openmp-threading (original code from https://github.com/ANL-CESAR/XSBench). 
