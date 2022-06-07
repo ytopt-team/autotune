@@ -1,0 +1,21 @@
+p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,objective,elapsed_sec
+5,cores,spread,#pragma omp parallel for,simd,device(offloaded_to_device),static,"schedule(static,2)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,98.436,213.62582683563232
+16,sockets,close, , ,device(offloaded_to_device),static,"schedule(static,8)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,14.732,286.325088262558
+42,threads,close,#pragma omp parallel for,simd, ,static,"schedule(static,4)",MANDATORY, ,6.067,385.3371765613556
+8,cores,close,#pragma omp parallel for, , ,static,"schedule(static,2)",DISABLED,MPI_Barrier(MPI_COMM_WORLD);,18.034,472.1387553215027
+8,cores,close,#pragma omp parallel for, , ,dynamic,"schedule(static,16)",DISABLED, ,18.995,540.7083404064178
+21,sockets,master,#pragma omp parallel for,simd,device(offloaded_to_device),static,"schedule(static,16)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,3.843,601.3381588459015
+32,sockets,master,#pragma omp parallel for,simd, ,static,"schedule(static,1)",MANDATORY, ,19.251,676.0365083217621
+1,cores,spread,#pragma omp parallel for,simd,device(offloaded_to_device),static,"schedule(static,2)",MANDATORY,MPI_Barrier(MPI_COMM_WORLD);,50.721,786.7146081924438
+42,sockets,close, , ,device(offloaded_to_device),static,"schedule(static,4)",DISABLED, ,12.696,879.5491852760315
+10,sockets,close, ,simd,device(offloaded_to_device),static,"schedule(static,4)",DEFAULT, ,16.723,946.228230714798
+5,sockets,close, ,simd,device(offloaded_to_device),static,"schedule(static,4)",DEFAULT, ,14.813,1014.9046332836151
+4,threads,close,#pragma omp parallel for,simd, ,dynamic,"schedule(static,4)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,16.188,1089.6323792934418
+4,threads,close,#pragma omp parallel for,simd,device(offloaded_to_device),dynamic,"schedule(static,4)",DEFAULT, ,18.573,1160.4615895748138
+16,sockets,spread,#pragma omp parallel for,simd,device(offloaded_to_device),static,"schedule(static,4)",DEFAULT, ,16.643,1227.2204949855804
+5,threads,close,#pragma omp parallel for,simd,device(offloaded_to_device),auto,"schedule(static,4)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,14.641,1297.9946777820587
+5,threads,close,#pragma omp parallel for,simd, ,static, ,DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,16.677,1368.7529854774475
+42,threads,master,#pragma omp parallel for,simd,device(offloaded_to_device),static,"schedule(static,4)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,4.344,1453.513988018036
+42,threads,master,#pragma omp parallel for, ,device(offloaded_to_device),static,"schedule(static,32)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,11.084,1536.331848859787
+42,threads,master,#pragma omp parallel for,simd,device(offloaded_to_device),static, ,DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,15.494,1619.0949501991272
+42,threads,master,#pragma omp parallel for, ,device(offloaded_to_device),static,"schedule(static,8)",DEFAULT,MPI_Barrier(MPI_COMM_WORLD);,17.649,1701.915816783905

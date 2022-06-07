@@ -1,0 +1,62 @@
+p0,p1,p2,p3,p4,objective,elapsed_sec
+5,cores,spread,dynamic,MPI_Barrier(CartComm);,10.508,63.61052203178406
+16,cores,close,static, ,7.864,90.13903427124023
+2,cores,close,static,MPI_Barrier(CartComm);,9.542,118.40261316299438
+2,sockets,master,dynamic, ,9.236,146.65144515037537
+8,threads,close,static,MPI_Barrier(CartComm);,8.13,172.91305422782898
+5,threads,master,static, ,8.46,199.14379835128784
+10,threads,close,static,MPI_Barrier(CartComm);,8.245,225.410169839859
+42,threads,close,static, ,8.49,251.78408908843994
+10,threads,close,dynamic,MPI_Barrier(CartComm);,8.315,278.0754289627075
+21,threads,close,static,MPI_Barrier(CartComm);,8.163,304.33871603012085
+21,threads,master,dynamic,MPI_Barrier(CartComm);,8.177,330.6816818714142
+2,threads,close,dynamic,MPI_Barrier(CartComm);,9.312,359.02017545700073
+32,cores,close,static, ,8.274,385.29052686691284
+1,sockets,close,static, ,10.316,413.5531804561615
+4,threads,close,dynamic, ,8.362,439.92639994621277
+32,threads,master,dynamic,MPI_Barrier(CartComm);,8.564,466.3967912197113
+21,threads,spread,static, ,7.859,492.6901845932007
+21,threads,spread,dynamic, ,7.86,519.0088737010956
+21,threads,close,dynamic, ,8.095,545.4919629096985
+21,sockets,close,static, ,7.839,571.8299968242645
+21,threads,spread,dynamic,MPI_Barrier(CartComm);,8.136,598.1038465499878
+21,sockets,spread,static, ,7.835,624.4584474563599
+21,cores,spread,static, ,8.011,650.7355971336365
+21,cores,close,static, ,7.822,676.9858968257904
+21,cores,master,static, ,8.003,703.4193217754364
+21,sockets,master,static, ,7.805,729.7159159183502
+21,sockets,spread,dynamic, ,7.819,755.9960289001465
+21,sockets,master,dynamic, ,8.052,782.6192474365234
+21,sockets,spread,static,MPI_Barrier(CartComm);,8.082,810.9106276035309
+21,sockets,close,dynamic, ,8.102,839.2171030044556
+21,cores,spread,dynamic, ,7.973,865.8245615959167
+21,sockets,spread,dynamic,MPI_Barrier(CartComm);,7.92,892.2265181541443
+21,cores,master,dynamic, ,7.797,918.530490398407
+32,sockets,close,static, ,8.214,946.8170142173767
+21,cores,spread,static,MPI_Barrier(CartComm);,7.95,975.121812582016
+5,cores,close,static, ,8.221,1003.4565155506134
+1,cores,close,static, ,10.103,1032.2983314990997
+10,cores,close,static, ,7.956,1058.6042997837067
+10,cores,spread,static, ,8.142,1085.4777324199677
+10,cores,master,static, ,8.125,1117.8373956680298
+10,cores,close,static,MPI_Barrier(CartComm);,8.218,1148.3059930801392
+10,cores,close,dynamic, ,7.941,1178.6578040122986
+10,cores,spread,dynamic, ,8.113,1208.9838557243347
+10,cores,master,dynamic, ,7.932,1239.2500894069672
+10,sockets,master,dynamic, ,8.176,1269.8486032485962
+10,sockets,spread,dynamic, ,7.937,1300.6455533504486
+10,sockets,close,dynamic, ,7.926,1331.0971417427063
+21,cores,master,static,MPI_Barrier(CartComm);,7.924,1361.383205652237
+10,sockets,spread,static, ,8.103,1391.7278487682343
+21,cores,close,static,MPI_Barrier(CartComm);,7.912,1422.0033190250397
+10,cores,spread,dynamic,MPI_Barrier(CartComm);,8.247,1452.2932472229004
+32,cores,master,static, ,8.224,1482.6751635074615
+32,cores,spread,static, ,8.263,1512.9603250026703
+32,cores,close,dynamic, ,8.403,1543.5274856090546
+10,sockets,close,static, ,8.242,1574.06010222435
+10,sockets,close,dynamic,MPI_Barrier(CartComm);,8.095,1606.3603312969208
+21,cores,master,dynamic,MPI_Barrier(CartComm);,7.94,1636.6259758472443
+32,sockets,spread,static, ,8.242,1666.9494454860687
+5,threads,close,static, ,8.203,1697.2275772094727
+5,threads,spread,static, ,8.232,1727.508663892746
+5,cores,master,static, ,8.445,1757.7932629585266

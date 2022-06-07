@@ -1,0 +1,7 @@
+p0,p1,p2,p3,p4,p5,p6,p7,objective,elapsed_sec
+8,threads,master,dynamic, ,#pragma unroll (6),#pragma omp for nowait,MPI_Barrier(MPI_COMM_WORLD);,170650.896,1973.44846200943
+128,cores,master,static,#pragma omp parallel for,#pragma unroll,#pragma omp for,MPI_Barrier(MPI_COMM_WORLD);,197919.607,3877.5829751491547
+192,threads,close,static, , ,#pragma omp for,MPI_Barrier(MPI_COMM_WORLD);,132451.564,5005.726219654083
+32,sockets,spread,static, , ,#pragma omp for nowait, ,85974.31,5943.251567363739
+64,threads,master,dynamic,#pragma omp parallel for,#pragma unroll,#pragma omp for nowait, ,167009.969,7663.251473903656
+8,threads,master,dynamic,#pragma omp parallel for,#pragma unroll,#pragma omp for nowait, ,243154.3,10433.251541614532
