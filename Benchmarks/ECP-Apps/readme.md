@@ -76,3 +76,15 @@ If it runs successfully, the conda environment yt is installed successfully.
 
 # Instructions for testing the autotuning framework on a laptop 
 Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already. 
+
+Download the file xsbench-mpi.zip under the folder XSBench-Laptop, then unzip the file to create the foler xsbench-mpi. Do the following steps:
+```
+cd xsbench-mpi
+* If you want to change the compiler mpicc (default), edit the file plopper/plopper.py. 
+cd xsbench
+* make sure to start the ytopt conda environemnt 
+conda activate yt
+* use the run script run.bat to autotune XSBench
+./run.bat
+* After it is finished, one performance file results.csv is generated.
+
