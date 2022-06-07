@@ -75,7 +75,7 @@ Download the file xsbench-mpi.zip under the folder XSBench-Laptop, then unzip th
 cd xsbench-mpi
 * If you want to change the compiler mpicc (default), edit the file plopper/plopper.py. 
 cd xsbench
-* make sure to start the ytopt conda environemnt yt 
+* make sure to start the ytopt conda environemnt yt before running a test
 conda activate yt
 * use the run script run.bat to autotune XSBench
 ./run.bat
