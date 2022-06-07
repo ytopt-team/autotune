@@ -1,2 +1,2 @@
-This directory includes all the files for autotuning XSBench on Theta. The autotuning scripts are in the folder autotuning for performance and in the folder 
-autotuning-g for energy using GEOPM. The file plopper.py under the folder plopper entails generating a new code, compiling and execution.
+This directory includes all the files for autotuning XSBench on Theta. The autotuning scripts are in the folder xsbench-mpi/xsbench for performance and in the folder 
+xsbench-mpi/xsbench-g for energy using GEOPM. The file plopper.py under the folder xsbench-mpi/plopper entails generating a new code, compiling and execution. The folder xsbench-omp includes the mixed OpenMP pragmas and Clang loop optimization pragmas codes for autotuninng.
