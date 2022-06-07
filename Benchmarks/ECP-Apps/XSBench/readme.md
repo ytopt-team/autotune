@@ -7,5 +7,5 @@ The list of folders:
 Summit            Autotuning scripts and needed codes on Summit
 Theta             Autotuning scripts and needed codes on Theta
 xsbench-mpi.zip   The zip file including both folders Summit and Theta
-xsbench-mixed.zip The zip file including Theta/xsbench-omp/tile-unroll
+xsbench-mixed.zip The zip file including Theta/xsbench-omp/tile-unroll which is the mixed code with the OpenMP pragmas and Clang loop optimization pragmas
 ```
