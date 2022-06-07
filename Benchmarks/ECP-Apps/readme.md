@@ -3,7 +3,7 @@ For each application folder, there are two sub-folders: Summit and Theta each in
 All of them require the installation of ytopt autotuning framework (https://github.com/ytopt-team/ytopt) 
 and MPI and OpenMP environments. 
 
-# Directory structure
+# Directory
 ```
 AMG/	
     Autotuning AMG on Theta and Summit
