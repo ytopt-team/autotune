@@ -63,10 +63,10 @@ pip install -e .
 cd ..
 ```
 
-After this, the conda environment yt is installed successfully. For a simple test, do the following:
+After this, the conda environment yt is installed successfully. For a simple test, 
+* do the following:
 ...
 cd yt/ytopt/ytopt/benchmark/benchmark/xsbench-omp/xsbench
-...
 run the following command:
 python -m ytopt.search.ambs --evaluator ray --problem problem.Problem --max-evals=5 --learner RF
 ...
