@@ -1,1 +1,1 @@
-This directory includes all the files for autotuning SW4lite on Theta. The autotuning scripts are in the folder autotuning for performance and energy. The file plopper.py under the folder plopper entails generating a new code, compiling and execution.
+This directory includes all the files for autotuning SW4lite on Theta. The autotuning scripts are in the folder autotuning for performance (sub-folder sw4lite) and energy (sub-folder sw4lite-g). The file plopper.py under the folder autotuning/plopper entails generating a new code, compiling and execution.
