@@ -1,5 +1,5 @@
 This directory includes all files for autotuning four ECP proxy apps: AMG, SW4lite, SWFFT, and XSBench on ALCF Theta and OLCF Summit. 
-For each application folder, there are two sub-folders: Summit and Theta each including the autotuning files for their platforms.
+For each application folder, there are two sub-folders: Summit and Theta each including the autotuning files for its platform.
 All of them require the installation of ytopt autotuning framework (https://github.com/ytopt-team/ytopt/blob/main/README.md) 
 and MPI and OpenMP environments. 
 
