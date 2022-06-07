@@ -55,7 +55,7 @@ def myobj(point: dict):
     value = [point[x1[0]],point[x1[1]],point[x1[2]],point[x1[3]],point[x1[4]],point[x1[5]]]
     print('VALUES:',point[x1[0]])
     os.environ["OMP_NUM_THREADS"] = point[x1[0]]
-    os.system("processexe.pl exe.pl " +point[x1[0]])
+    os.system("./processexe.pl exe.pl " +point[x1[0]])
     params = ["P0","P1","P2","P3","P4","P5"]
 
     result = obj.findRuntime(value, params)
@@ -63,7 +63,7 @@ def myobj(point: dict):
 
   x = np.array([point[f'p{i}'] for i in range(len(point))])
   results = plopper_func(x)
-  print('OUTPUT:%f',results)
+  print('OUTPUT: ',results)
 
   return results
 
