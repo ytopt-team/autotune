@@ -6,3 +6,5 @@ The list of folders:
 ```
 Summit    Autotuning scripts and needed codes on Summit
 Theta     Autotuning scripts and needed codes on Theta
+amg.zip   The zip file including both folders Summit and Theta
+```
