@@ -13,6 +13,8 @@ SWFFT/
     Autotuning SWFFT on Theta and Summit  
 XSBench/	
     Autotuning XSBench on Theta and Summit
+XSBench-Laptop/	
+    Autotuning XSBench on a laptop
 ```
 
 # ytopt Install instructions
