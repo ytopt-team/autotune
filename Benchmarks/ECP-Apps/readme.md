@@ -16,7 +16,7 @@ XSBench/
 ```
 
 # ytopt Install instructions
-The ytopt autotuning framework requires the following components: ConfigSpace, CConfigSpace (optional), scikit-optimize, autotune, and ytopt.
+The ytopt autotuning framework requires the following components: ConfigSpace, scikit-optimize, autotune, and ytopt. This installation should be very quick.
 
 * We recommend creating isolated Python environments on your local machine using [conda](https://docs.conda.io/projects/conda/en/latest/index.html), for example, create a conda environment yt as follows:
 
@@ -63,5 +63,14 @@ pip install -e .
 cd ..
 ```
 
+After this, the conda environment yt is installed successfully. For a simple test, do the following:
+...
+cd yt/ytopt/ytopt/benchmark/benchmark/xsbench-omp/xsbench
+...
+run the following command:
+python -m ytopt.search.ambs --evaluator ray --problem problem.Problem --max-evals=5 --learner RF
+...
+If it runs successfully, the conda environment yt is installed successfully.
+
 # Instructions for testing the autotuning framework on a laptop 
-Follow the ytopt installation instructions to install the ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed already.
+Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already. 
