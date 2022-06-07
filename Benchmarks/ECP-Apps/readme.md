@@ -95,4 +95,4 @@ p0,p1,p2,p3,p4,p5,objective,elapsed_sec
 2,10, ,cores,close,dynamic,40.974,162.95570302009583
 ```
 where p0,p1,p2,p3,p4,p5 are the tunable parameters; objective stands for the application execution time; and elapsed_sec stands for the wall-clock time.
-See the details about the autotuning scripts from https://github.com/ytopt-team/autotune/blob/master/Benchmarks/ECP-Apps/XSBench-Laptop/xsbench-mpi/xsbench/readme.md.
+See the details about the autotuning scripts from the link https://github.com/ytopt-team/autotune/tree/master/Benchmarks/ECP-Apps/XSBench-Laptop/xsbench-mpi/xsbench.
