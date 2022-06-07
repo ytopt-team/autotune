@@ -82,9 +82,16 @@ Download the file xsbench-mpi.zip under the folder XSBench-Laptop, then unzip th
 cd xsbench-mpi
 * If you want to change the compiler mpicc (default), edit the file plopper/plopper.py. 
 cd xsbench
-* make sure to start the ytopt conda environemnt 
+* make sure to start the ytopt conda environemnt yt 
 conda activate yt
 * use the run script run.bat to autotune XSBench
 ./run.bat
-* After it is finished, one performance file results.csv is generated.
-
+```
+After it is finished, one performance file results.csv is generated. The file looks like 
+```
+p0,p1,p2,p3,p4,p5,objective,elapsed_sec
+4,400, ,threads,master,static,29.227,48.44736695289612
+2,10, ,cores,master,dynamic,40.775,106.44645190238953
+2,10, ,cores,close,dynamic,40.974,162.95570302009583
+```
+where p0,p1,p2,p3,p4,p5 are the tunable parameters; objective stands for the application execution time; and elapsed_sec stands for the wall-clock time.
