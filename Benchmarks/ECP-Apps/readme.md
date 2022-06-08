@@ -27,7 +27,7 @@ conda create --name yt python=3.7
 conda activate yt
 ```
 
-* Create a directory for ytopt as follows:
+* Create a directory for ytopt installation as follows:
 ```
 mkdir yt
 cd yt
