@@ -1,6 +1,6 @@
 #!/bin/bash
 
-let nnds=1024
+let nnds=4096
 #--- process exe.pl to change the number of nodes
 ./processcp.pl ${nnds}
 
