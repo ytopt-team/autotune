@@ -68,7 +68,7 @@ cd ..
 After this, the conda environment yt is installed successfully. 
 
 # Instructions for testing the autotuning framework on a laptop 
-Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already. 
+Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already (use "brew install open-mpi" for MPI; use "brew install libomp" for OpenMP). 
 
 Download the file xsbench-mpi.zip under the folder XSBench-Laptop, then unzip the file to create the foler xsbench-mpi. Do the following steps:
 ```
@@ -83,9 +83,11 @@ conda activate yt
 After it is finished, one performance file results.csv is generated. The file looks like 
 ```
 p0,p1,p2,p3,p4,p5,objective,elapsed_sec
-4,400, ,threads,master,static,29.227,48.44736695289612
-2,10, ,cores,master,dynamic,40.775,106.44645190238953
-2,10, ,cores,close,dynamic,40.974,162.95570302009583
+2,10,#pragma omp parallel for,cores,close,static,45.825,56.204030990600586
+6,128, ,cores,master,dynamic,24.861,88.20706510543823
+3,100,#pragma omp parallel for,sockets,master,dynamic,33.733,128.20559000968933
+6,256,#pragma omp parallel for,sockets,spread,static,24.38,160.20615696907043
+8,400, ,threads,master,static,22.516,190.19838786125183
 ```
 where p0,p1,p2,p3,p4,p5 are the tunable parameters; objective stands for the application execution time (in seconds); and elapsed_sec stands for the wall-clock time.
 See the details about the autotuning scripts from the link https://github.com/ytopt-team/autotune/tree/master/Benchmarks/ECP-Apps/XSBench-Laptop/xsbench-mpi/xsbench.
