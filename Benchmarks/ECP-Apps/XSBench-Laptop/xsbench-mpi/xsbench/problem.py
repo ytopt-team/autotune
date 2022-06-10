@@ -16,7 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(1, os.path.dirname(HERE)+ '/plopper')
 from plopper import Plopper
 
-cs = CS.ConfigurationSpace(seed=1234)
+cs = CS.ConfigurationSpace(seed=2345)
 # number of threads
 p0= CSH.OrdinalHyperparameter(name='p0', sequence=['2','3','4','5','6','7','8'], default_value='8')
 #block size for openmp dynamic schedule
