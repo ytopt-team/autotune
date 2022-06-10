@@ -68,7 +68,7 @@ cd ..
 After this, the conda environment yt is installed successfully. 
 
 # Instructions for testing the autotuning framework on a laptop 
-Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already (use "brew install open-mpi" for MPI; use "brew install libomp" for OpenMP). 
+Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already (use "brew install open-mpi" to install MPI; use "brew install libomp" to install OpenMP). 
 
 Download the file xsbench-mpi.zip under the folder XSBench-Laptop, then unzip the file to create the foler xsbench-mpi. Do the following steps:
 ```
