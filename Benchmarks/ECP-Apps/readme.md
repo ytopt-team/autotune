@@ -64,6 +64,10 @@ cd ytopt
 pip install -e .
 cd ..
 ```
+* If needed, downgrade the protobuf package to 3.20.x or lower
+```
+pip install protobuf==3.20
+```
 
 After this, the conda environment yt is installed successfully. 
 
