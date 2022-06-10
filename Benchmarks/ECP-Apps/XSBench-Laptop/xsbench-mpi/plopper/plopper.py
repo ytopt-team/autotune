@@ -63,10 +63,10 @@ class Plopper:
         kernel_dir = self.sourcefile[:kernel_idx]
 
 
-        cmd1 = "mpicc -std=gnu99 -Wall -dynamic -fopenmp -O3 -DOPENMP -DMPI "  + \
+        cmd1 = "mpicc -std=gnu99 -Wall -O3 -Xclang -fopenmp -DOPENMP -DMPI -I/usr/local/opt/llvm/include/clang "  + \
 		" -o " + tmpbinary + " " + interimfile +" " + kernel_dir + "/Materials.c " \
                 + kernel_dir + "/XSutils.c " + " -I" + kernel_dir + \
-                " -lm -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
+                " -lm -lomp"
 
         cmd2 = kernel_dir + "/exe.pl " +  tmpbinary
 
