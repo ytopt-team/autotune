@@ -1,7 +1,7 @@
 This directory includes autotuning XSBench on a laptop (MacBook Pro). This example demonstrates how to autotune at a small scale. After the ytopt is installed on the laptop, download the file xsbench-mpi.zip which includes the folders xsbench (for autotuning scripts), plopper (for compiling and execution), and openmp-threading (original code from https://github.com/ANL-CESAR/XSBench). 
 
 # Instructions for testing the autotuning framework on a laptop 
-Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already (use "brew install open-mpi" for MPI; use "brew install libomp" for OpenMP). 
+Follow the ytopt installation instructions to install ytopt on a laptop such as a Macbook Pro. Aussume that MPI and OpenMP programming environments are installed and supported already (use "brew install open-mpi" to install MPI; use "brew install libomp" to install OpenMP). 
 
 Download the file xsbench-mpi.zip under the folder XSBench-Laptop, then unzip the file to create the foler xsbench-mpi. Do the following steps:
 ```
