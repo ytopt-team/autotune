@@ -64,6 +64,11 @@ cd ytopt
 pip install -e .
 cd ..
 ```
+* If needed, install packaging 
+```
+pip install packaging
+```
+
 * If needed, downgrade the protobuf package to 3.20.x or lower
 ```
 pip install protobuf==3.20
