@@ -1,7 +1,0 @@
-p0,p1,p2,p3,p4,p5,p6,objective,elapsed_sec
-8,threads, , ,#pragma unroll(6),spread,static,16.831,43.492536783218384
-48,threads, ,#pragma omp parallel for, ,master,dynamic,881.614,943.2843556404114
-4,cores,#pragma unroll(3),#pragma omp parallel for, ,spread,dynamic,20.9,983.2839767932892
-128,sockets,#pragma unroll(3),#pragma omp parallel for, ,close,static,30.798,1033.2841577529907
-256,cores, , ,#pragma unroll(6),spread,static,86.892,1139.2840011119843
-48,sockets,#pragma unroll(3),#pragma omp parallel for, ,spread,static,17.787,1175.2842888832092

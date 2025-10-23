@@ -1,6 +1,0 @@
-p0,p1,p2,p3,objective,elapsed_sec
-5,cores,spread,dynamic,6.601,25.624573469161987
-16,sockets,spread,dynamic,6.064,38.15950870513916
-16,threads,master,static,6.082,50.57356882095337
-21,cores,spread,dynamic,6.047,62.75552034378052
-10,threads,master,static,6.118,74.93582963943481

@@ -1,1 +1,0 @@
-This directory includes all the files for autotuning AMG on Summit. The autotuning scripts are in the folder autotuning. The file plopper.py under the folder plopper entails generating a new code, compiling and execution. The script runs.lsf under autotuning is used to submit a job.
